@@ -510,10 +510,47 @@ Se også forelesningsslides om OS fra høsten 2018
   - Tilfeldige variasjoner legges inn i koden hele tiden slik at signaturen endrer seg
 - Metamorfe virus
   - Forsøker å gjemme seg og være vanskelige å finne signatur på ved "obskurifisering"
-    - Emdre rekkefølgen på instruksjoner
+    - Endre rekkefølgen på instruksjoner
     - Legge inn unyttinge intruksjoner
     - Omstrukturere indre metode-kall
 - Å gjemme seg handler som regel om å skjule signaturen til viruset godt
 
 
 ### Ormer
+- Sprer seg selv uten hjelp fra brukere
+- Infiserer ikke andre programmer
+- Har som regel en ondsinnet payload
+  - F.eks: installere bakdør eller slette filer
+#### Spredning av ormer
+- Ormen finner sårbare host-maskiner
+- Sprer seg akkurat som pest eller influensa
+
+### Trojanere, rootkits og Botnets
+#### Trojanere
+- Ser ut til å være en nyttig programware, men inneholder ondsinnet kode
+  - F.eks keylogger
+#### Rootkits
+- Rootkits modifiserer OS og skjuler sin eksistens
+- Kur win xp: Sysinternals RootKitRevealer 
+  - Scanner hele filsystemet to ganger 
+  - Ulikt resultat tyder på at et rootkit er installert 
+  - Virker KUN på XP
+
+##### Teknikker brukt av rootkits:
+- Skjuling av prosesser/drivere
+- Skjuling av registryoppføringer
+- Skjuling av fysiske filer på disk
+
+#### Botnets
+- Malware kan gjøre maskinen om til en "zombie" i et botnet som er en ekstern kontrollert maskin benyttet til ondsinnede angrep (f.esk DoS-angrep)
+
+### Adware
+- Viser reklame på den infiserte maskinen
+
+### Spyware
+- Spionerer og samler inn data om brukeren ved hjelp av keyloggere osv. for å få tilgang til passord o.l
+
+#### Spyeye
+- Klikk og dra software for å utvikle Spyware som stjeler bankinformasjon
+- Benyttet i angrep mot Nordea og DNB
+
